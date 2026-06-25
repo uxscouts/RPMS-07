@@ -1,5 +1,5 @@
 {
-  "name": "timeczar01",
+  "name": "RPMS-02",
   "hostRequirements": {
     "cpus": 8,
     "memory": "16gb"
@@ -11,6 +11,9 @@
     "ghcr.io/devcontainers/features/docker-in-docker:2": {
       "version": "latest",
       "moby": false
+    },
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "lts"
     }
   },
   "forwardPorts": [],
