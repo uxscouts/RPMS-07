@@ -42,5 +42,27 @@ Step 3: Terminal Way (Fast Backup Method)
 
 If your SQL file is massive and the extension struggles with it, you can run it instantly from your VS Code terminal because your workspace shares a network. Run this single command:
 
-docker compose exec -T mysql mysql -udev_user -pdev_password my_database < ./databases/tomato.sql
+docker compose exec -T mysql mysql -udev_user -p dev_password my_database < ./databases/tomato.sql
 
+docker compose exec -T mysql mysql -u root -p 
+password: rootpassword
+
+docker ps (to get sql container id)
+docker exec -it d7747d62ff36 mysql -u root -p
+
+docker exec -it mysql mysql -u root -p
+
+can just use service name instead of the sql container id:
+
+No, you do not need to find the container ID. You can simply use the service name defined in your docker-compose.yml file (e.g., mysql, db, or database).
+
+service name: mysql
+docker compose exec mysql mysql -u root -p
+ (this works!!!)
+
+service name: mysql
+docker compose exec mysql mysql -u dev_user -p
+(this works!!!)
+
+// Force to show database INSIDE container!! - Not native Codespaces MySQL
+docker-compose exec mysql mysql -u dev_user -pdev_password my_database -e "SHOW TABLES;"
