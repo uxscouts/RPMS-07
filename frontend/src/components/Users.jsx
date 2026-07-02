@@ -12,7 +12,7 @@ export default function Users() {
    // const API_URL = 'http://localhost:8000/api/users.php'; 
     const API_URL = 'https://organic-tribble-gxpgrp4w4j29pqq-8001.app.github.dev/user.php';
     // const API_URL = '/api/users.php';
-   // const API_URL = `${import.meta.env.VITE_API_URL}/api/users.php`; 
+  //  const API_URL = `${import.meta.env.VITE_API_URL}/api/users.php`; 
 
     fetch(API_URL, {
       method: 'GET',
