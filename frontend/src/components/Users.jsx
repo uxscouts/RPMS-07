@@ -32,7 +32,7 @@ export default function Users() {
         const BASE_URL2 = getCodespacesBackendUrl_02();
 
         // Add the PHP Endpoint to the base URL, /user.php 
-        const API_URL2 = BASE_URL2 + '/user.php'
+        const API_URL2 = BASE_URL2 + '/users3.php'
 
         // See how I did that? I mean Google AI showed me how, take whatever the URL
         // as save it const and then add the php page which does the datbase query

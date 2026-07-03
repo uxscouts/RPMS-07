@@ -17,7 +17,7 @@ export default function Users() {
     };
 
     const BASE_URL2 = getCodespacesBackendUrl_02();
-    const API_URL2 = BASE_URL2 + '/user.php';
+    const API_URL2 = BASE_URL2 + '/users3.php';
 
     // Fetch users function
     const fetchUsers = () => {
